@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class GetPoint : MonoBehaviour
 {
 
-    private GameObject GetPointText;
+    private GameObject getpointText;
     private int getpoint = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        this.GetPointText = GameObject.Find("GetPointText");
+        this.getpointText = GameObject.Find("GetPointText");
         
     }
 
@@ -22,7 +22,7 @@ public class GetPoint : MonoBehaviour
     void Update()
     {
 
-       // this.GetPointText.GetComponent<Text>().text = getpoint;
+        this.getpointText.GetComponent<Text>().text = getpoint.ToString();
     }
 
     private void OnCollisionEnter(Collision collision)
