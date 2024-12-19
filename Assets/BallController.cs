@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BallController : MonoBehaviour
 {
 
-    private float visiblePosZ = -6.5f;
+    private float visiblePosZ = -6.5f; //ボールが見える可能性のあるz軸の最小値
 
     private GameObject gameoverText;
 

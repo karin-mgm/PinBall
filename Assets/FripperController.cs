@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FripperController : MonoBehaviour
 {
-    private HingeJoint myHingeJoint;
+    private HingeJoint myHingeJoint; //HingeJointコンポーネントを入れる
 
     private float defaultAngle = 20;
 

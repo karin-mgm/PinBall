@@ -44,7 +44,7 @@ public class BrightnessRegulator : MonoBehaviour
     {
         if (this.degree >= 0)
         {
-            Color emissionColor = this.defaultColor * (this.minEmission + Mathf.Sin(this.degree * Mathf.Deg2Rad) * this.magEmission);
+            Color emissionColor = this.defaultColor * (this.minEmission + Mathf.Sin(this.degree * Mathf.Deg2Rad) * this.magEmission); //「Mathf.Deg2Rad」は、度数に掛けることでラジアンに変換できます。
 
             myMaterial.SetColor ("_EmissionColor", emissionColor);
 
@@ -53,7 +53,7 @@ public class BrightnessRegulator : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other) //衝突時に呼ばれる関数,自分のColliderが他のオブジェクトのColliderと接触した時に呼ばれる
     {
         this.degree = 180;
     }
